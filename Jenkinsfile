@@ -1,7 +1,7 @@
-node('slv1') {
+node{
    stage('Cont.Downloads') 
      {
-     https://github.com/venkat9822891/multi-branch-config.git
+     git branch: 'dev', url: 'https://github.com/venkat9822891/multi-branch-config.git'
       }
    stage('Cont.Builds') 
      {
